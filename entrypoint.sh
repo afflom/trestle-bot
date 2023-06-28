@@ -13,7 +13,7 @@ output=$(python3.8 -m trestlebot \
         --committer-email="${INPUT_COMMIT_USER_EMAIL}" \
         --author-name="${INPUT_COMMIT_AUTHOR_NAME}" \
         --author-email="${INPUT_COMMIT_AUTHOR_EMAIL}" \
-        --working-dir="${INPUT_WORKING_DIR}" 2>&1 | tee log.txt)
+        --working-dir="${INPUT_REPOSITORY}" 2>&1 | tee log.txt)
 
 cat log.txt
 
