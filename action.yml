@@ -55,7 +55,7 @@ outputs:
 runs:
   using: "docker"
   image: "Dockerfile"
-  entrypoint: [ "/entrypoint.sh"]
+  entrypoint: "/entrypoint.sh"
 
 branding:
   icon: "check"
