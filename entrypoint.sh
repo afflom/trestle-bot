@@ -19,7 +19,7 @@ cat log.txt
 
 commit=$(echo "$output" | grep "Commit Hash:" | sed 's/.*: //')
 
-echo ls -la
+ls -la
 
 if [ -n "$commit" ]; then
     echo "changes=true" >> "$GITHUB_OUTPUT"
